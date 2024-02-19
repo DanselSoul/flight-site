@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+:root {
+  --primary-color: #3072ff;
+  --secondary-color: #f3f1ea;
+  --color_one: #ffb171;
+  --color_two: #ffc290;
+  --hover-color: #6e9cff;
+  --white: #ffffff;
+  --black: #242424;
+  --grey: #5a5a5a;
+}
+
+body {
+  background: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  padding-left: 1, 5rem;
+  padding-right: 1, 5rem;
+  margin: 0 auto;
+}
+
+.icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.none {
+  display: none;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 3rem;
+  outline: none;
+  cursor: pointer;
+  color: var(--white);
+}
+.btn a {
+  color: var(--white);
+  font-weight: 400;
+}
+.btn:hover {
+  background: var(--hover-color);
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+}
+
+input {
+  font-size: 100%;
+  color: var(--grey);
+}
+
+p {
+  font-size: 13px;
+  color: var(--grey);
+  line-height: 22px;
+}
+
+h4 {
+  padding: 1rem 0;
+  font-weight: 700;
+  color: var(--black);
+}
+
+h2 {
+  font-size: 25px;
+  padding: 1rem 0;
+  color: var(--black);
+}
+
+.navBar {
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1000;
+}
+.navBar .navBarOne, .navBar .navBarTwo {
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+.navBar .navBarOne {
+  background: var(--secondary-color);
+}
+.navBar .navBarOne .icon:hover {
+  color: var(--primary-color);
+}
+.navBar .navBarOne .atb {
+  gap: 1rem;
+}
+.navBar .navBarOne .atb span {
+  color: var(--black);
+  font-size: 13px;
+  cursor: pointer;
+}
+.navBar .navBarOne .atb span:hover {
+  color: var(--primary-color);
+}
+.navBar .navBarTwo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 3rem;
+  padding: 1.5rem 1rem;
+  transition: 0.3s ease-in-out;
+}
+.navBar .logoDiv .logo {
+  width: 20%;
+}
+@media screen and (max-width: 768px) {
+  .navBar .navBarMenu {
+    position: absolute;
+    background: var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    top: 7.2rem;
+    right: 50%;
+    width: 80%;
+    transform: translateX(50%);
+    z-index: 2000;
+    box-shadow: none;
+    border: 3px solid var(--white);
+    transition: 0.4s ease-in-out;
+  }
+  .navBar .navBarMenu .menu {
+    flex-direction: column;
+    cursor: pointer;
+    color: var(--black);
+  }
+  .navBar .navBarMenu .menu a {
+    color: var(--black);
+  }
+  .navBar .navBarMenu .menu .listItem {
+    padding: 0.5rem 0;
+  }
+  .navBar .navBarMenu .menu .listItem a:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+  }
+  .navBar .navBarMenu .btnOne {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1rem;
+  }
+}/*# sourceMappingURL=main.css.map */
