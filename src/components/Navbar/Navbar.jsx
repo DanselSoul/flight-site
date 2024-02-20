@@ -1,13 +1,24 @@
-import React from "react"
+import React, {useState} from "react"
 
 import {SiConsul} from "react-icons/si"
 import {BsPhoneVibrate} from "react-icons/bs"
 import {AiOutlineGlobal} from "react-icons/ai"
 import {CgMenuGridO} from "react-icons/cg"
 
-// import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.png'
 
 const Navbar = () => {
+
+  const [active, setActive] = useState('navBarMenu')
+
+  const showNavBar = ()=>{
+    setActive('navBarMenu showNavBar')
+  }
+
+  const hideNavBar = ()=>{
+    setActive('navBarMenu')
+  }
+
   return(
     <div className="navBar flex">
       <div className="navBarOne flex">
@@ -31,10 +42,10 @@ const Navbar = () => {
       <div className="navBarTwo flex">
 
         <div className="logoDiv">
-          {/* <img src={logo} alt="logo" className="Logo"/> */}
+          <img src={logo} alt="logo" className="logo"/> 
         </div>
 
-        <div className="navBarMenu">
+        <div className={active}>
           <ul className="menu flex">
             <li className="listItem"><a href="#">Home</a></li>
             <li className="listItem"><a href="#">About</a></li>
@@ -46,14 +57,13 @@ const Navbar = () => {
           <button className="btn flex btnOne">
             Contact
           </button>
-
         </div>
 
-        {/* <button className="btn flex btnOne">
+        <button className="btn flex btnTwo">
           Contact
-        </button> */}
+        </button>
 
-        <div className="toggleIcon"> 
+        <div onClick={showNavBar} className="toggleIcon"> 
           <CgMenuGridO/>
         </div>
 
