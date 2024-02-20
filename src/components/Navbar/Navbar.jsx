@@ -47,14 +47,14 @@ const Navbar = () => {
 
         <div className={active}>
           <ul className="menu flex">
-            <li className="listItem"><a href="#">Home</a></li>
-            <li className="listItem"><a href="#">About</a></li>
-            <li className="listItem"><a href="#">Offers</a></li>
-            <li className="listItem"><a href="#">Seats</a></li>
-            <li className="listItem"><a href="#">Destinations</a></li>
+            <li onClick={showNavHide} className="listItem"><a href="#">Home</a></li>
+            <li onClick={showNavHide} className="listItem"><a href="#">About</a></li>
+            <li onClick={showNavHide} className="listItem"><a href="#">Offers</a></li>
+            <li onClick={showNavHide} className="listItem"><a href="#">Seats</a></li>
+            <li onClick={showNavHide} className="listItem"><a href="#">Destinations</a></li>
           </ul>
 
-          <button className="btn flex btnOne">
+          <button onClick={showNavHide} className="btn flex btnOne">
             Contact
           </button>
         </div>
