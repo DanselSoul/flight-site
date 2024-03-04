@@ -106,6 +106,13 @@ h2 {
   color: var(--black);
 }
 
+h1 {
+  position: absolute;
+  margin-top: 10rem;
+  width: 100%;
+  text-align: center;
+}
+
 .navBar {
   position: fixed;
   flex-direction: column;
@@ -144,6 +151,7 @@ h2 {
 }
 .navBar .logoDiv .logo {
   width: 3rem;
+  margin: 0;
 }
 @media screen and (max-width: 768px) {
   .navBar .navBarMenu {

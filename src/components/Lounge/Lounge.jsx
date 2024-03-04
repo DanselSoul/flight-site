@@ -2,7 +2,7 @@ import React from 'react'
 
 const Lounge = () => {
   return (
-    <div></div>
+    <div>LOUNGE</div>
   )
 }
 

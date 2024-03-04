@@ -1,4 +1,6 @@
 import React, {useState} from "react"
+import { Link } from "react-router-dom";
+
 
 import {SiConsul} from "react-icons/si"
 import {BsPhoneVibrate} from "react-icons/bs"
@@ -47,11 +49,11 @@ const Navbar = () => {
 
         <div className={active}>
           <ul className="menu flex">
-            <li onClick={hideNavBar} className="listItem"><a href="#">Home</a></li>
-            <li onClick={hideNavBar} className="listItem"><a href="#">About</a></li>
-            <li onClick={hideNavBar} className="listItem"><a href="#">Offers</a></li>
-            <li onClick={hideNavBar} className="listItem"><a href="#">Seats</a></li>
-            <li onClick={hideNavBar} className="listItem"><a href="#">Destinations</a></li>
+            <li onClick={hideNavBar} className="listItem"><Link to="/">Home</Link></li>
+            <li onClick={hideNavBar} className="listItem"><Link to="/about">About</Link></li>
+            <li onClick={hideNavBar} className="listItem"><Link to="/offers">Offers</Link></li>
+            <li onClick={hideNavBar} className="listItem"><Link to="/seats">Seats</Link></li>
+            <li onClick={hideNavBar} className="listItem"><Link to="/destination">Destinations</Link></li>
           </ul>
 
           <button onClick={hideNavBar} className="btn flex btnOne">
@@ -68,6 +70,7 @@ const Navbar = () => {
         </div>
 
       </div>
+
     </div>
   )
 }

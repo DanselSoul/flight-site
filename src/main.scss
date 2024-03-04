@@ -109,6 +109,13 @@ h2{
     color: var(--black);
 }
 
+h1{
+    position: absolute;
+    margin-top: 10rem;
+    width: 100%;
+    text-align: center;
+}
+
 //navigation bar
 .navBar{
     position: fixed;
@@ -155,6 +162,7 @@ h2{
     .logoDiv{
         .logo{
             width: 3rem;
+            margin:0;
         }
     }
 
