@@ -6,7 +6,7 @@ export default class Destination extends Component {
     return (
         <div>
             <Navbar/>
-            <h1>Destination</h1>
+            <div className='text'>Destination</div>
         </div>
     )
   }

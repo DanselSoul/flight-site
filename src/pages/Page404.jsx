@@ -7,7 +7,7 @@ export default class Page404 extends Component {
     return (
         <div>
             <Navbar/>
-            <h1>Page bot found. Go <Link to="/">HOME</Link></h1>
+            <div className='text'>Page bot found. Go <Link to="/">HOME</Link></div>
         </div>
     )
   }

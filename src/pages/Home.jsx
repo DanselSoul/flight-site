@@ -7,7 +7,7 @@ export default class Home extends Component {
     return (
         <div>
             <Navbar></Navbar>
-            <h1>Hello home</h1>
+            <div className='text'>Hello home</div>
         </div>
     )
   }

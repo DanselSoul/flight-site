@@ -6,7 +6,7 @@ export default class Contacts extends Component {
     return (
         <div>
             <Navbar/>
-            <h1>About</h1>
+            <div className='text'>About</div>
         </div>
     )
   }
